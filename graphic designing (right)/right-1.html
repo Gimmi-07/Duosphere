@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f5ede4;
+      padding: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    h1, h2 {
+      background-color: #b99b6b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      width: fit-content
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+
+    .setrightH2 h2 {
+      margin-left: auto;
+      margin-right: 50px;
+    }
+
+    .content-block {
+      display: flex;
+      align-items: flex-start;
+      /* flex-direction: row-reverse; */
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .content-block.reverse {
+        flex-direction: row-reverse;
+    }
+    .image-container-outside {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container-outside img {
+      max-width: 60%;
+      height: auto;
+      /* border-radius: 10px; */
+      /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
+    }
+
+    .section {
+      /* background-color: #e4d4c0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px #ccc;
+      max-width: 795px;
+      height: 363px;
+      align-items: center; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* justify-content: center; */
+      background-color: #e4d4c0;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      /* border-radius: 0px 40px 40px 0px; */
+      box-shadow: 2px 2px 6px #ccc;
+      gap: 20px;
+      width: 795px;
+      height: 363px;
+      flex: 1 1 55%;
+    }
+    .section.border-OT {
+        border-radius: 0px 40px 40px 0px;
+    }
+    .section.border-TF {
+        border-radius: 40px 0px 0px 40px;
+    }
+    .text {
+      max-width: 100%;
+      font-size: large;
+    }
+
+    ul {
+      margin-top: 40px;
+      padding-left: 20px;
+    }
+
+    .back {
+      display: flex;
+      justify-content: end;
+      /* align-items: center; */
+      margin-top: 40px;
+      margin-right: 50px;
+      font-weight: bold;
+    }
+ 
+    .back a {
+      text-decoration: none;
+      color: #3e2e1c;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .content-block {
+        flex-direction: column;
+        align-items:center;
+      }
+
+      .section, .image-container-outside {
+        width: 100%;
+        height:fit-content;
+      }
+    }
+</style>
+</head>
+<body>
+      <section>
+    <div class="setrightH2">
+    <h2>Graphic Designing</h2>
+</div>
+    <div class="content-block">
+      <div class="image-container-outside">
+        <img src="r-1.png" alt="Graphic Designing Illustration" />
+      </div>
+      <div class="section  border-TF">
+        <div class="text">
+          <p>Bring your ideas to life with visually stunning designs that <br>communicate, captivate, and inspire. Our graphic design<br> solutions are tailored to reflect your brand’s identity, ensuring <br>a perfect balance of creativity and clarity.</p>
+          <ul>
+            <li>Designs That Speak, Br That Shine.</li>
+            <li>Creavitive Solutions for Lasting Impressions.</li>
+            <li>Visual Storytelling That Connects and Engages.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
