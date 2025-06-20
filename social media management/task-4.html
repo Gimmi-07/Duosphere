@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development and Designing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f5ede4;
+      padding: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    h1, h2 {
+      font-size: 48px;
+      background-color: #b99b6b;
+      padding: 5px 10px;
+      border-radius: 7px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      width: fit-content
+    }
+
+    h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+
+    .setrightH2 h2 {
+      margin-left: auto;
+      margin-right: 50px;
+    }
+
+    .content-block {
+      display: flex;
+      align-items: flex-start;
+      /* flex-direction: row-reverse; */
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .content-block.reverse {
+        flex-direction: row-reverse;
+    }
+    .image-container-outside {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container-outside img {
+      max-width: 60%;
+      height: auto;
+      /* border-radius: 10px; */
+      /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
+    }
+
+    .section {
+      /* background-color: #e4d4c0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px #ccc;
+      max-width: 795px;
+      height: 363px;
+      align-items: center; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* justify-content: center; */
+      background-color: #e4d4c0;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      /* border-radius: 0px 40px 40px 0px; */
+      box-shadow: 2px 2px 6px #ccc;
+      gap: 20px;
+      width: 795px;
+      height: 363px;
+      flex: 1 1 55%;
+    }
+    .section.border-OT {
+        border-radius: 0px 40px 40px 0px;
+    }
+    .section.border-TF {
+        border-radius: 40px 0px 0px 40px;
+    }
+    .text {
+  max-width: 100%;
+  font-size: large;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+}
+
+.text.right-shift {
+  padding-left: 300px;
+  padding-right: 0px;
+  text-align: right;
+}
+
+    ul {
+      margin-top: 40px;
+      padding-left: 20px;
+    }
+
+    .back {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 8px; 
+  margin: 40px 50px 0 0; 
+  cursor: pointer;
+  direction: ltr; 
+}
+
+.arrow2 {
+  width: 40px;
+  height: auto;
+}
+
+.back-text {
+  color: #3e2e1c;
+  font-size: 20px;
+}
+
+.text.no-bullets ul {
+  list-style-type: none;     
+  padding-left: 0;           
+  text-align: right;         
+}
+
+    @media (max-width: 768px) {
+      .content-block {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section, .image-container-outside {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Social Media Management</h1>
+    <div class="content-block reverse">
+      <div class="image-container-outside">
+        <img src="4-1.png"/>
+      </div>
+      <div class="section border-OT">
+        <div class="text">
+            <p>
+                Elevate your brand’s online presence with strategic social media <br>management. From content creation to audience engagement, we<br> craft compelling digital experiences that drive growth and build <br>meaningful connections.
+              </p>
+              <ul>
+                <li >Grow. Engage. Influence.</li>
+                <li>Strategic Content, Maximum Impact.</li>
+                <li>Turning Followers into Loyal Customers.</li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="setrightH2">
+    <h2>Graphic Designing</h2>
+</div>
+    <div class="content-block">
+      <div class="image-container-outside">
+        <img src="4-2.png"/>
+      </div>
+      <div class="section  border-TF">
+        <div class="text">
+          <div class="text right-shift">
+            <p style="text-align: right;">
+                Bring your ideas to life with visually stunning designs that <br>communicate, captivate, and inspire. Our graphic design<br> solutions are tailored to reflect your brand’s identity, ensuring<br> a perfect balance of creativity and clarity.
+            </p>
+            <div class="text no-bullets">
+              <ul>
+                <li>● Designs That Speak, Brands That Shine.</li>
+                <li>● Creative Solutions for Lasting Impressions.</li>
+                <li>● Visual Storytelling That Connects and Engages.</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Interior Design &</h1>
+<h1>Home Styling</h1>
+    <div class="content-block reverse">
+      <div class="image-container-outside">
+        <img src="4-3.png"/>
+      </div>
+      <div class="section border-OT">
+        <div class="text">
+            <p>
+                Reimagine your living spaces with designs that balance aesthetics<br> and functionality. Our home design services focus on creating<br> personalized environments that reflect your lifestyle and preferences.
+            </p>
+            <ul>
+                <li>Transform Your Living Spaces.</li>
+                <li>Personalized Designs for Every Home.</li>
+                <li>Balancing Functionality and Aesthetics.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="setrightH2">
+    <h2>Content Writing</h2>
+</div>
+    <div class="content-block">
+      <div class="image-container-outside">
+        <img src="4-4.png"/>
+      </div>
+      <div class="section  border-TF">
+        <div class="text">
+          <div class="text right-shift">
+            <p style="text-align: right;">
+                Communicate effectively with content that drives engagement.<br> From persuasive copywriting to blog posts and product <br>descriptions, our content services ensure your brand voice shines<br> while enhancing your online visibility.
+            </p>
+            <div class="text no-bullets">
+            <ul>
+                <li>● Enhance Engagement with Expert Content.</li>
+                <li>● SEO-Friendly Copywriting and Blogs.</li>
+                <li>● Tailored Messaging for Your Brand.</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <span class="back">
+    <img src="brown arrow.png" alt="img" class="arrow2">
+    <span class="back-text">Back</span>
+  </span>
+</body>
+</html>
